@@ -52,9 +52,10 @@ namespace ALLInOne
                // in-memory, code config
                .AddInMemoryIdentityResources(Config.IdentityResources)
                .AddInMemoryApiScopes(Config.ApiScopes)
-               .AddInMemoryClients(Config.Clients)
-            // not recommended for production - you need to store your key material somewhere secure
-            .AddDeveloperSigningCredential();
+                .AddInMemoryApiResources(Config.ApiResources)
+                .AddInMemoryClients(Config.Clients)
+                // not recommended for production - you need to store your key material somewhere secure
+                .AddDeveloperSigningCredential();
 
 
             //将Swagger 注入到 DI 容器中去↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓

@@ -4,6 +4,7 @@
 
 using IdentityServer4.Models;
 using System.Collections.Generic;
+using IdentityModel;
 using IdentityServer4;
 
 namespace ALLInOne.TestConfig
@@ -70,6 +71,15 @@ namespace ALLInOne.TestConfig
                     },
                     AllowOfflineAccess = true,
                 }
+            };
+
+        public static IEnumerable<ApiResource> ApiResources =>
+            new List<ApiResource>()
+            {
+                //new ApiResource("swagger_api",new List<string>()
+                //{
+                //    JwtClaimTypes.Role
+                //})
             };
     }
 }

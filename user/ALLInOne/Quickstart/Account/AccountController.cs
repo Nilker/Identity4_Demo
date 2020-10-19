@@ -15,7 +15,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace IdentityServerHost.Quickstart.UI
@@ -130,7 +132,11 @@ namespace IdentityServerHost.Quickstart.UI
                     // issue authentication cookie with subject ID and username
                     var isuser = new IdentityServerUser(user.SubjectId)
                     {
-                        DisplayName = user.Username
+                        DisplayName = user.Username,
+                        //在这里加是无效的：需要在testUser中添加
+
+                        AdditionalClaims = user.Claims
+
                     };
 
                     await HttpContext.SignInAsync(isuser, props);

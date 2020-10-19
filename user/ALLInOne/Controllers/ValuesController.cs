@@ -37,18 +37,27 @@ namespace ALLInOne.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        [Authorize]
+        [Authorize(Roles = "sssAdminsss")]
         public string Get(int id)
         {
             return id.ToString() ;
         }
 
-        [Authorize()]
+        [Authorize(Roles = "sssAdmin")]
         // POST api/<ValuesController>
         [HttpPost("single-file")]
-        public void Upload(IFormFile file)
+        public async Task<IActionResult> Upload(IFormFile file)
         {
+            return Ok(new { count = 1, size=file.Length });
         }
+
+        [Authorize]
+        [HttpGet("GetClaims")]
+        public async Task<IActionResult> GetClaims()
+        {
+            return new JsonResult(from c in User.Claims select new { c.Type, c.Value });
+        }
+
 
         [HttpPost("multiple-files")]
         public async Task<IActionResult> Upload(List<IFormFile> files)
