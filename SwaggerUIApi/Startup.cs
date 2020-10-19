@@ -29,6 +29,11 @@ namespace SwaggerUIApi
         {
             services.AddControllersWithViews();
 
+            /*
+             * Authentication 身份验证：确定用户身份的过程
+             * 
+             */
+
             //认证服务器地址  身份认证服务注册的DI
             services.AddAuthentication("Bearer")
                 .AddJwtBearer("Bearer", options =>
