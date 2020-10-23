@@ -17,11 +17,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "server", "user\server\serve
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcClient", "user\MvcClient\MvcClient.csproj", "{ECCF0AC1-7690-477A-8954-70CBB0288213}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALLInOne", "user\ALLInOne\ALLInOne.csproj", "{35833568-0EC8-45A3-A5FB-80B333ACAA03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALLInOne", "user\ALLInOne\ALLInOne.csproj", "{35833568-0EC8-45A3-A5FB-80B333ACAA03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwaggerUIApi", "SwaggerUIApi\SwaggerUIApi.csproj", "{14EFD1F9-F63F-4670-8B0D-EEB56B3C776E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwaggerUIApi", "SwaggerUIApi\SwaggerUIApi.csproj", "{14EFD1F9-F63F-4670-8B0D-EEB56B3C776E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{6DD18D14-793C-40CD-BF50-EFA98100351E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{6DD18D14-793C-40CD-BF50-EFA98100351E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mongodbRepository", "mongodbRepository", "{A07965E2-AB53-43CA-B518-347FB06F1564}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01mongodbRepository", "mongodbRepository\01mongodbRepository\01mongodbRepository.csproj", "{8CD58B75-2C83-44E0-BE77-8864CA5F91C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +133,18 @@ Global
 		{6DD18D14-793C-40CD-BF50-EFA98100351E}.Release|x64.Build.0 = Release|Any CPU
 		{6DD18D14-793C-40CD-BF50-EFA98100351E}.Release|x86.ActiveCfg = Release|Any CPU
 		{6DD18D14-793C-40CD-BF50-EFA98100351E}.Release|x86.Build.0 = Release|Any CPU
+		{8CD58B75-2C83-44E0-BE77-8864CA5F91C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD58B75-2C83-44E0-BE77-8864CA5F91C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD58B75-2C83-44E0-BE77-8864CA5F91C3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8CD58B75-2C83-44E0-BE77-8864CA5F91C3}.Debug|x64.Build.0 = Debug|Any CPU
+		{8CD58B75-2C83-44E0-BE77-8864CA5F91C3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8CD58B75-2C83-44E0-BE77-8864CA5F91C3}.Debug|x86.Build.0 = Debug|Any CPU
+		{8CD58B75-2C83-44E0-BE77-8864CA5F91C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD58B75-2C83-44E0-BE77-8864CA5F91C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CD58B75-2C83-44E0-BE77-8864CA5F91C3}.Release|x64.ActiveCfg = Release|Any CPU
+		{8CD58B75-2C83-44E0-BE77-8864CA5F91C3}.Release|x64.Build.0 = Release|Any CPU
+		{8CD58B75-2C83-44E0-BE77-8864CA5F91C3}.Release|x86.ActiveCfg = Release|Any CPU
+		{8CD58B75-2C83-44E0-BE77-8864CA5F91C3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -139,6 +155,7 @@ Global
 		{BFAFFB21-0DED-463A-8AF2-8D31900FA5B9} = {43984FCA-D0B1-4527-815C-1123DD74DFA7}
 		{9DD5971B-54CE-4E76-A69A-458A333F54C5} = {F65F5414-A00E-41BF-8ABD-1384DD09AF4C}
 		{ECCF0AC1-7690-477A-8954-70CBB0288213} = {F65F5414-A00E-41BF-8ABD-1384DD09AF4C}
+		{8CD58B75-2C83-44E0-BE77-8864CA5F91C3} = {A07965E2-AB53-43CA-B518-347FB06F1564}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB4096F0-9051-459D-A81D-D3C1992612C8}
